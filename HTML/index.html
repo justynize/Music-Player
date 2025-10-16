@@ -12,7 +12,7 @@
         <div class="music-player">
             <nav>
                 <div class="circle">
-                    <i class="fa-solid fa-angle-right"></i>
+                  <i class="fa-solid fa-angle-left"></i>
                 </div>
                 <div class="circle">
                     <i class="fa-solid fa-bars"></i>
@@ -22,10 +22,22 @@
             <h1>despacito</h1>
             <p>Luis fonsi Ft. Pueto Rican</p>
 
+            <audio controls id="song">
+                <source src="/Assets/2. Taylor Swift - cardigan (128).mp3" type="audio/mpeg">
+            </audio>
+
+            <input type="range" value="0" id="progress">
+
+            <div class="controls">
+                <div><i class="fa-solid fa-backward-step"></i></div>
+                <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+                <div><i class="fa-solid fa-forward-step"></i></div>
+            </div>
+
         </div>
     </div>
 
-
+<script src="/player.js"></script>
 
 </body>
 </html>
